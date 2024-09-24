@@ -1,7 +1,7 @@
 import React from 'react'
 import './Contact.css'  
 import Back from './Images/lienco3.png'
-import ic from './Images/tt.jpg'
+
 
 const Contact = () => {
   return (

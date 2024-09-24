@@ -29,8 +29,10 @@ const Popup = ({ isVisible, onClose }) => {
           <span className="icon-close" onClick={onClose}>
             X
           </span>
-          <h1>Login</h1>
+          
           <form onSubmit={handleSubmit}>
+          <h1>Login</h1>
+          <span className="icon-close" onClick={onClose}>X</span>
             <label htmlFor="email">Email:</label>
             <input
               type="email"

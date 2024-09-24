@@ -35,8 +35,10 @@ const Signpop = ({ isSignVisible, onClose }) => {
       <div className='signpop-container' onClick={(e) => e.stopPropagation()}>
         <div className='signpop-content'>
           <span className="icon-close" onClick={onClose}>X</span>
-          <h1>Sign up</h1>
+      
           <form onSubmit={handleSubmit}>
+          <h1>Sign up</h1>
+          <span className="icon-close" onClick={onClose}>X</span>
             <label htmlFor="username">Username:</label>
             <input
               type="text"

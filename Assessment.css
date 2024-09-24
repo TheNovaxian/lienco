@@ -1,14 +1,11 @@
-.assessment{
-        width: 100%;
-        min-height: 100vh;
-        z-index: -1;
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        top: 0;
-        left: 0;
-        background-color: black;
-      
-    
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 120vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
 }
-
