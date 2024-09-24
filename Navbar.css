@@ -11,7 +11,7 @@
     opacity: 0.85;
     z-index: 2;
     position: fixed;
-    width: 98vw;
+    width: 99vw;
    
 }
 
@@ -66,4 +66,14 @@
 .active {
     font-weight: bold;
     color: blue; 
+  }
+
+  .logout{
+    background-color: #f44336; /* Red background for logout button */
+    color: white; /* Text color */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }

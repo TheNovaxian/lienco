@@ -1,10 +1,12 @@
-import React from 'react'
+import React, {useEffect,useState} from 'react'
 import './Navbar.css';
 import { Link } from 'react-scroll'
 import logo from './Images/lienco3.png';
 import Emergency from './Emergency/Emergency';
+import { auth } from './firebase';
 
 const Navbar = () => {
+  
   return (
     <div className='nav'>
       <div className='nav-logo'>
