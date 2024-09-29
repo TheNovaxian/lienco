@@ -56,7 +56,7 @@ const Emergency = () => {
    
         
     <button className="emergency" onClick={handleEmergencyClick}>
-            Emergency
+           <b> Emergency</b>
         </button>
    
   )

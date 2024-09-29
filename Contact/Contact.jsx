@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import './Contact.css'  
-import FI from './Images/lienco3.png'
-import { db } from './firebase'; // Import Firestore config
+// import FI from './cback.jpg'
+import { db } from '../firebase'; // Import Firestore config
 import { collection, addDoc } from 'firebase/firestore'; // Firestore functions
 
 
@@ -42,7 +42,7 @@ const Contact = () => {
           <form>
            
             {/* <img src={Back} alt='back' /> */}
-            <img src={FI} alt='logo' />
+            {/* <img src={FI} alt='logo' /> */}
             <h1>Contact Us</h1>
             <label htmlFor="name">Name:</label>
             <input type="text" id="name" name="name" placeholder='John Doe' required value={formData.name}
@@ -54,7 +54,7 @@ const Contact = () => {
             <textarea id="message" name="message" placeholder='Write your message here...' required  value={formData.message}
             onChange={handleChange} />
             <div className='btn2'>
-              <button type='submit' onClick={handleSubmit} >Submit</button>
+              <button type='submit' onClick={handleSubmit} ><b>Submit</b></button>
             </div>
           </form>
           </div>

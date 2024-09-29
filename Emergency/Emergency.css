@@ -12,6 +12,12 @@
    
 }
 
+.emergency:hover{
+    background-color: #ff0000;
+    box-shadow: 0px 15px 20px rgba(255, 0, 0, 0.4);
+    color: #fff;
+    transform: translateY(-1px);
+}
 @keyframes blink {
     0% {
         opacity: 1;

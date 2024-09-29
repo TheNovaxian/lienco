@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { login } from '../Auth'; // Make sure to import your login function
 import './Popup.css';
 
-const Popup = ({ isVisible, onClose }) => {
+const Popup = ({ isVisible, onClose, onLogin }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -16,6 +16,7 @@ const Popup = ({ isVisible, onClose }) => {
 
     try {
       await login(email, password); // Call your login function
+      onLogin();
       onClose(); // Close the popup on successful login
     } catch (err) {
       setError(err.message); // Set error message
